@@ -1,0 +1,973 @@
+book:
+  title: "Curls & Contemplation: A Stylist’s Interactive Journey Journal"
+  subtitle: "A Journey of Self-Discovery"
+  author: "MD Warren"
+  language: en-US
+  date: "2025-05-27"
+  rights: "© 2025 MD Warren. All rights reserved."
+  publisher: "MD Warren"
+  identifier:
+    scheme: UUID
+    text: urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d
+  isbn: 978-0-000-00000-0
+  epub_version: 3
+  description: >
+    An interactive journey of creative mastery, business growth, and self-reflection
+    for stylists, blending artistry, entrepreneurship, and personal development.
+    This comprehensive guide combines biblical wisdom with practical business acumen,
+    featuring interactive worksheets, self-assessments, and professional development tools.
+  subject:
+    - Nonfiction
+    - Beauty
+    - Business
+    - Personal Development
+    - Hairstyling
+    - Entrepreneurship
+    - Professional Growth
+    - Self-Help
+  accessibility_summary: >
+    This EPUB meets WCAG 2.2 Level AA standards with accessible navigation,
+    form elements, comprehensive image alt text, high-contrast design, and
+    screen reader compatibility. All interactive elements include proper ARIA
+    labels and keyboard navigation support.
+  css:
+    - OEBPS/styles/fonts.css
+    - OEBPS/styles/style.css
+  embedded_fonts:
+    - OEBPS/fonts/librebaskerville-bold.woff2
+    - OEBPS/fonts/librebaskerville-italic.woff2
+    - OEBPS/fonts/librebaskerville-regular.woff2
+    - OEBPS/fonts/Montserrat-Bold.woff2
+    - OEBPS/fonts/Montserrat-Regular.woff2
+    - OEBPS/fonts/CinzelDecorative.woff2
+  toc: true
+  toc_depth: 2
+
+mcp_integration:
+  enabled: true
+  servers_used:
+    - Filesystem
+    - Fetch
+    - Sequential Thinking
+    - Memory
+    - Everything
+    - Pandoc-MCP
+  validation_level: professional
+  accessibility_check: true
+  seo_optimization: true
+
+files:
+  # 1–7 FRONT MATTER
+  - id: 1
+    section: Front Matter
+    input: "title_page.md"
+    template: "fm-title.xhtml"
+    output: "fm-title.xhtml"
+    page_box_class: "page-box fm-title"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Title Page"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      display_title: "Curls & Contemplation"
+      subtitle: "A Stylist’s Interactive Journey Journal"
+      author: "MD Warren"
+
+  - id: 2
+    section: Front Matter
+    input: "copyright.md"
+    template: "fm-static.xhtml"
+    output: "fm-static.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Copyright"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "Copyright"
+
+  - id: 3
+    section: Front Matter
+    input: "table_of_contents.md"
+    template: "fm-toc.xhtml"
+    output: "fm-toc.xhtml"
+    page_box_class: "page-box columns-2"
+    column_mode: "2 col"
+    role: "frontmatter"
+    description: "Table of Contents"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta: {}
+
+  - id: 4
+    section: Front Matter
+    input: "dedication.md"
+    template: "fm-dedication.xhtml"
+    output: "fm-dedication.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Dedication"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "Dedication"
+
+  - id: 5
+    section: Front Matter
+    input: "self_assessment.md"
+    template: "fm-self.xhtml"
+    output: "fm-self.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Self-Assessment 1"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "fm-sa1"
+        title: "Self-Assessment 1"
+        prompts: []
+
+  - id: 6
+    section: Front Matter
+    input: "affirmation_odyssey.md"
+    template: "fm-affirmation.xhtml"
+    output: "fm-affirmation.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Affirmation Odyssey"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "fm-affirmation"
+        title: "Affirmation Odyssey"
+        prompts: []
+
+  - id: 7
+    section: Front Matter
+    input: "preface.md"
+    template: "fm-preface.xhtml"
+    output: "fm-preface.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "frontmatter"
+    description: "Preface"
+    bible_quote: null
+    image:
+      src: OEBPS/images/preface-quote.png
+      alt: "Preface inspirational quote image."
+    meta:
+      title: "Preface"
+
+  # 8 PART I DIVIDER
+  - id: 8
+    section: Part Divider
+    input: "8-Part-I-Foundations-of-Creative-Hairstyling.md"
+    template: "part.xhtml.j2"
+    output: "8-Part-I-Foundations-of-Creative-Hairstyling.xhtml"
+    page_box_class: "page-box part-div"
+    column_mode: "1 col"
+    role: "part"
+    description: "Part I: Foundations of Creative Hairstyling"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      part:
+        roman: "I"
+        title: "Foundations of Creative Hairstyling"
+
+  # 9–11 CHAPTER BODIES
+  - id: 9
+    section: Chapter
+    input: "9-Chapter-I-Unveiling-Your-Creative-Odyssey.md"
+    template: "chapter-template.xhtml"
+    output: "9-Chapter-I-Unveiling-Your-Creative-Odyssey.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Discover conscious hairstyling: Transform client lives and unveil your unique creative odyssey, infusing deeper meaning and purpose into every style."
+    bible_quote: "For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do. — Ephesians 2:10"
+    image:
+      src: OEBPS/images/chapter-i-quote.png
+      alt: "I’m always doing things in a metaphorical way… I wanted to get across the idea of hair in motion to represent change—getting out of dark times and leaving uncertainty behind. — Jawara W"
+    keywords:
+      - conscious hairstyling
+      - creative fulfillment hairstylist
+      - purposeful artistry
+      - client empowerment hair
+    meta:
+      endnotes_inline: true
+
+  - id: 10
+    section: Chapter
+    input: "10-Chapter-II-Refining-Your-Creative-Toolkit.md"
+    template: "chapter-template.xhtml"
+    output: "10-Chapter-II-Refining-Your-Creative-Toolkit.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Elevate your artistry: Invest in your professional toolkit and master foundational techniques for precision, boundless creativity, and flawless results."
+    bible_quote: "Do you see someone skilled in their work? They will serve before kings; they will not serve before officials of low rank. — Proverbs 22:29"
+    image:
+      src: OEBPS/images/chapter-ii-quote.png
+      alt: "Simply love what you do and the rest will shine through… educating myself daily on new trends and techniques is my passion. — Kendall Dorsey"
+    keywords:
+      - professional hairstylist tools
+      - master hair techniques
+      - precision cutting skills
+      - quality styling equipment
+    meta:
+      endnotes_inline: true
+
+  - id: 11
+    section: Chapter
+    input: "11-Chapter-III-Reigniting-Your-Creative-Fire.md"
+    template: "chapter-template.xhtml"
+    output: "11-Chapter-III-Reigniting-Your-Creative-Fire.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Reignite your creative fire: Rediscover your “why” and embrace a growth mindset to conquer burnout and sustain your passion for hairstyling."
+    bible_quote: "For this reason I remind you to fan into flame the gift of God, which is in you through the laying on of my hands. — 2 Timothy 1:6"
+    image:
+      src: OEBPS/images/chapter-iii-quote.png
+      alt: "To master hairstyling, weave your skills with threads of passion, professionalism, and personal growth. — Michael David"
+    keywords:
+      - overcome hairstylist burnout
+      - rekindle styling passion
+      - growth mindset beauty pro
+      - creative inspiration hair
+    meta:
+      endnotes_inline: true
+
+  # 12 PART II DIVIDER
+  - id: 12
+    section: Part Divider
+    input: "12-Part-II-Building-Your-Professional-Practice.md"
+    template: "part.xhtml.j2"
+    output: "12-Part-II-Building-Your-Professional-Practice.xhtml"
+    page_box_class: "page-box part-div"
+    column_mode: "1 col"
+    role: "part"
+    description: "Part II: Building Your Professional Practice"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      part:
+        roman: "II"
+        title: "Building Your Professional Practice"
+
+  # 13–17 CHAPTER BODIES
+  - id: 13
+    section: Chapter
+    input: "13-Chapter-IV-The-Art-of-Networking-in-Freelance-Hairstyling.md"
+    template: "chapter-template.xhtml"
+    output: "13-Chapter-IV-The-Art-of-Networking-in-Freelance-Hairstyling.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Master freelance networking: Forge vital connections and expand your influence to unlock new opportunities and build a thriving hairstylist career."
+    bible_quote: "Two are better than one because they have a good return for their labor. For if either of them falls, the one will lift up his companion. — Ecclesiastes 4:9-10"
+    image:
+      src: OEBPS/images/chapter-iv-quote.png
+      alt: "Cultivate a career that grows with you, rooted in passion, watered by perseverance, and blossomed through bravery. — Michael David"
+    keywords:
+      - freelance hairstylist networking
+      - hair industry connections
+      - build stylist referrals
+      - social media for stylists
+    meta:
+      endnotes_inline: true
+
+  - id: 14
+    section: Chapter
+    input: "14-Chapter-V-Cultivating-Creative-Excellence-Through-Mentorship.md"
+    template: "chapter-template.xhtml"
+    output: "14-Chapter-V-Cultivating-Creative-Excellence-Through-Mentorship.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Accelerate your growth: Cultivate creative excellence by strategically finding mentors and building powerful relationships for career advancement."
+    bible_quote: "As iron sharpens iron, so one person sharpens another. — Proverbs 27:17"
+    image:
+      src: OEBPS/images/chapter-v-quote.png
+      alt: "I think people just need to be a lot more knowledgeable on hair types… there’s no white or black hair, only different types and textures. — Ursula Stephen"
+    keywords:
+      - hairstylist mentorship
+      - accelerate stylist growth
+      - hair career guidance
+      - mentorship benefits beauty
+    meta:
+      endnotes_inline: true
+
+  - id: 15
+    section: Chapter
+    input: "15-Chapter-VI-Mastering-the-Business-of-Hairstyling.md"
+    template: "chapter-template.xhtml"
+    output: "15-Chapter-VI-Mastering-the-Business-of-Hairstyling.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Master hairstyling business: Develop keen business acumen, from client loyalty to financial planning, ensuring your creative talent thrives profitably."
+    bible_quote: "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters. — Colossians 3:23"
+    image:
+      src: OEBPS/images/chapter-vi-quote.png
+      alt: "Building a thriving business in hairstyling isn’t just about shaping hair; it’s about reshaping lives, starting with your own. — Michael David"
+    keywords:
+      - hairstylist business skills
+      - salon financial goals
+      - hair client loyalty
+      - market hairstyling brand
+    meta:
+      endnotes_inline: true
+
+  - id: 16
+    section: Chapter
+    input: "16-Chapter-VII-Embracing-Wellness-and-Self-Care.md"
+    template: "chapter-template.xhtml"
+    output: "16-Chapter-VII-Embracing-Wellness-and-Self-Care.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Embrace holistic wellness: Prioritize self-care with ergonomic practices and mindfulness to sustain your energy and passion in the demanding hair industry."
+    bible_quote: "Do you not know that your bodies are temples of the Holy Spirit… You are not your own; you were bought at a price. — 1 Corinthians 6:19-20"
+    image:
+      src: OEBPS/images/chapter-vii-quote.png
+      alt: "Every hairstyle tells a story, and every business decision writes a chapter in your book of professional success. — Michael David"
+    keywords:
+      - hairstylist self-care
+      - beauty professional wellness
+      - prevent stylist burnout
+      - ergonomics for hairstylists
+    meta:
+      endnotes_inline: true
+
+  - id: 17
+    section: Chapter
+    input: "17-Chapter-VIII-Advancing-Skills-Through-Continuous-Education.md"
+    template: "chapter-template.xhtml"
+    output: "17-Chapter-VIII-Advancing-Skills-Through-Continuous-Education.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Advance your styling skills: Commit to continuous education to stay competitive, master new techniques, and remain inspired in the evolving beauty world."
+    bible_quote: "Let the wise listen and add to their learning, and let the discerning get guidance. — Proverbs 1:5"
+    image:
+      src: OEBPS/images/chapter-viii-quote.png
+      alt: "Balance in the beauty industry isn’t found, it’s created through a symphony of service, skill, and self-care. — Michael David"
+    keywords:
+      - hairstylist continuing education
+      - advanced hair skills
+      - beauty industry trends
+      - online hair courses
+    meta:
+      endnotes_inline: true
+
+  # 18 PART III DIVIDER
+  - id: 18
+    section: Part Divider
+    input: "18-Part-III-Advanced-Business-Strategies.md"
+    template: "part.xhtml.j2"
+    output: "18-Part-III-Advanced-Business-Strategies.xhtml"
+    page_box_class: "page-box part-div"
+    column_mode: "1 col"
+    role: "part"
+    description: "Part III: Advanced Business Strategies"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      part:
+        roman: "III"
+        title: "Advanced Business Strategies"
+
+  # 19–23 CHAPTER BODIES
+  - id: 19
+    section: Chapter
+    input: "19-Chapter-IX-Stepping-Into-Leadership.md"
+    template: "chapter-template.xhtml"
+    output: "19-Chapter-IX-Stepping-Into-Leadership.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Step into leadership: Cultivate your influence as a freelance hairstylist, mentor others, and expand your professional impact beyond the chair."
+    bible_quote: "And David shepherded them with integrity of heart; with skillful hands he led them. — Psalm 78:72"
+    image:
+      src: OEBPS/images/chapter-ix-quote.png
+      alt: "Lead with your heart, guide with your hands, and follow with your soul—this is the path to impactful artistry. — Michael David"
+    keywords:
+      - hairstylist leadership
+      - freelance leadership beauty
+      - influence in hairstyling
+      - mentor upcoming stylists
+    meta:
+      endnotes_inline: true
+
+  - id: 20
+    section: Chapter
+    input: "20-Chapter-X-Crafting-Enduring-Legacies.md"
+    template: "chapter-template.xhtml"
+    output: "20-Chapter-X-Crafting-Enduring-Legacies.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Craft your enduring legacy: Build a sustainable, impactful career by focusing on long-term well-being, client impact, and conscious hairstyling."
+    bible_quote: "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law. — Galatians 5:22-23"
+    image:
+      src: OEBPS/images/chapter-x-quote.png
+      alt: "Thrive in the beauty industry by cultivating not just client relationships, but a community of creativity and care. — Michael David"
+    keywords:
+      - hairstylist legacy
+      - long-term stylist success
+      - sustainable hair career
+      - mindful hairstyling practice
+    meta:
+      endnotes_inline: true
+
+  - id: 21
+    section: Chapter
+    input: "21-Chapter-XI-Advanced-Digital-Strategies-for-Freelance-Hairstylists.md"
+    template: "chapter-template.xhtml"
+    output: "21-Chapter-XI-Advanced-Digital-Strategies-for-Freelance-Hairstylists.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Amplify your reach: Implement advanced digital strategies to build your freelance brand online, attract ideal clients, and grow your business."
+    bible_quote: "A good name is more desirable than great riches; to be esteemed is better than silver or gold. — Proverbs 22:1"
+    image:
+      src: OEBPS/images/chapter-xi-quote.png
+      alt: "Inclusivity in hairstyling isn’t just about the textures you tame but the hearts you touch and the minds you open. — Michael David"
+    keywords:
+      - digital marketing hairstylist
+      - online hairstylist brand
+      - social media for hair clients
+      - e-commerce stylist
+    meta:
+      endnotes_inline: true
+
+  - id: 22
+    section: Chapter
+    input: "22-Chapter-XII-Financial-Wisdom-Building-Sustainable-Ventures.md"
+    template: "chapter-template.xhtml"
+    output: "22-Chapter-XII-Financial-Wisdom-Building-Sustainable-Ventures.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Build sustainable ventures: Cultivate financial wisdom with smart pricing and cash flow mastery for a resilient and profitable freelance hairstyling career."
+    bible_quote: "A friend loves at all times, and a brother is born for a time of adversity. — Proverbs 17:17"
+    image:
+      src: OEBPS/images/chapter-xii-quote.png
+      alt: "Entrepreneurship in hairstyling is the art of turning strands into standards and cuts into cultures. — Michael David"
+    keywords:
+      - hairstylist financial planning
+      - profitable salon business
+      - freelance hair income
+      - recession-proof stylist
+    meta:
+      endnotes_inline: true
+
+    section: Chapter
+    input: "23-Chapter-XIII-Embracing-Ethics-and-Sustainability-in-Hairstyling.md"
+    template: "chapter-template.xhtml"
+    output: "23-Chapter-XIII-Embracing-Ethics-and-Sustainability-in-Hairstyling.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Embrace sustainable hairstyling: Integrate ethical, eco-friendly practices into your salon to attract conscious clients and protect our planet."
+    bible_quote: "The earth is the Lord’s, and everything in it, the world, and all who live in it. — Psalm 24:1"
+    image:
+      src: OEBPS/images/chapter-xiii-quote.png
+      alt: "Your hands mold more than hair—they mold aspirations, turning the salon chair into a seat of transformation. — Michael David"
+    keywords:
+      - sustainable hairstyling
+      - eco-friendly salon
+      - ethical beauty practices
+      - green hairstylist products
+    meta:
+      endnotes_inline: true
+
+  # 24 PART IV DIVIDER
+  - id: 24
+    section: Part Divider
+    input: "24-Part-IV-Future-Focused-Growth.md"
+    template: "part.xhtml.j2"
+    output: "24-Part-IV-Future-Focused-Growth.xhtml"
+    page_box_class: "page-box part-div"
+    column_mode: "1 col"
+    role: "part"
+    description: "Part IV: Future-Focused Growth"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      part:
+        roman: "IV"
+        title: "Future-Focused Growth"
+
+  # 25–27 FINAL CHAPTER BODIES
+  - id: 25
+    section: Chapter
+    input: "25-Chapter-XIV-The-Impact-of-AI-on-the-Beauty-Industry.md"
+    template: "chapter-template.xhtml"
+    output: "25-Chapter-XIV-The-Impact-of-AI-on-the-Beauty-Industry.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Navigate AI in beauty: Understand how Artificial Intelligence is shaping hairstyling and leverage its tools while honing your unique human artistry."
+    bible_quote: "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves, not looking to your own interests but each of you to the interests of the others. — Philippians 2:3-4"
+    image:
+      src: OEBPS/images/chapter-xiv-quote.png
+      alt: "Let each stroke of your brush not only paint beauty but also stroke the fires of your entrepreneurial spirit. — Michael David"
+    keywords:
+      - ai in beauty industry
+      - hairstylist technology
+      - future of hairstyling
+      - ai hair tools
+    meta:
+      endnotes_inline: true
+
+  - id: 26
+    section: Chapter
+    input: "26-Chapter-XV-Cultivating-Resilience-and-Well-Being-in-Hairstyling.md"
+    template: "chapter-template.xhtml"
+    output: "26-Chapter-XV-Cultivating-Resilience-and-Well-Being-in-Hairstyling.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Cultivate deep resilience: Fortify your mental well-being and manage industry stressors with proven strategies for a balanced and fulfilling career."
+    bible_quote: "Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. — James 1:2-3"
+    image:
+      src: OEBPS/images/chapter-xv-quote.png
+      alt: "Your craft is your voice—let it speak of innovation, echo with integrity, and sing with sincerity. — Michael David"
+    keywords:
+      - hairstylist resilience
+      - mental wellness beauty pro
+      - work-life balance stylist
+      - stress management hair
+    meta:
+      endnotes_inline: true
+
+  - id: 27
+    section: Chapter
+    input: "27-Chapter-XVI-Tresses-and-Textures-Embracing-Diversity-in-Hairstyling.md"
+    template: "chapter-template.xhtml"
+    output: "27-Chapter-XVI-Tresses-and-Textures-Embracing-Diversity-in-Hairstyling.xhtml"
+    page_box_class: null
+    column_mode: null
+    role: "chapter"
+    description: "Embrace hair diversity: Master techniques for all tresses and textures, fostering an inclusive practice that celebrates every client’s unique beauty."
+    bible_quote: "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus. — Galatians 3:28"
+    image:
+      src: OEBPS/images/chapter-xvi-quote.png
+      alt: "Within each curl lies a story, waiting to be unfurled by the artistry of hands; for every snip shapes not just hair, but the path to self-discovery. — Michael David"
+    keywords:
+      - diverse hair textures
+      - inclusive hairstyling
+      - cultural competency beauty
+      - textured hair care education
+    meta:
+      endnotes_inline: true
+
+  # 28 BACK MATTER – Conclusion
+  - id: 28
+    section: Back Matter
+    input: "28-Conclusion.md"
+    template: "fm-static.xhtml.j2"
+    output: "28-Conclusion.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Conclusion"
+    bible_quote: null
+    image:
+      src: OEBPS/images/conclusion-quote.png
+      alt: "Conclusion inspirational quote image."
+    meta:
+      title: "Conclusion"
+
+  # 29–44 BACK MATTER
+  - id: 29
+    section: Back Matter
+    input: "29-Quiz-Key.md"
+    template: "chap-quiz.xhtml.j2"
+    output: "29-Quiz-Key.xhtml"
+    page_box_class: "page-box quiz"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Answer Key"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      quiz:
+        title: "Answer Key"
+        questions: []
+
+  - id: 30
+    section: Back Matter
+    input: "30-Self-Assessment.md"
+    template: "worksheet.xhtml.j2"
+    output: "30-Self-Assessment.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Self-Assessment"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-sa"
+        title: "Self-Assessment"
+        prompts: []
+
+  - id: 31
+    section: Back Matter
+    input: "31-Affirmations-Close.md"
+    template: "worksheet.xhtml.j2"
+    output: "31-Affirmations-Close.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Affirmations Close"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-affirmation"
+        title: "Affirmations Close"
+        prompts: []
+
+  - id: 32
+    section: Back Matter
+    input: "32-Continued-Learning-Commitment.md"
+    template: "worksheet.xhtml.j2"
+    output: "32-Continued-Learning-Commitment.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Continued Learning Commitment"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-continue"
+        title: "Continued Learning Commitment"
+        prompts: []
+
+  - id: 33
+    section: Back Matter
+    input: "33-Acknowledgments.md"
+    template: "fm-static.xhtml.j2"
+    output: "33-Acknowledgments.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Acknowledgments"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "Acknowledgments"
+
+  - id: 34
+    section: Back Matter
+    input: "34-About-the-Author.md"
+    template: "fm-static.xhtml.j2"
+    output: "34-About-the-Author.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "About the Author"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "About the Author"
+
+  - id: 35
+    section: Back Matter
+    input: "35-Curls-Contemp-Collective.md"
+    template: "fm-static.xhtml.j2"
+    output: "35-Curls-Contemp-Collective.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Curls & Contemp Collective"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "Curls & Contemp Collective"
+
+  - id: 36
+    section: Back Matter
+    input: "36-Journaling-Start.md"
+    template: "worksheet.xhtml.j2"
+    output: "36-Journaling-Start.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Journaling Start"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-journal-start"
+        title: "Journaling Start"
+        prompts: []
+
+  - id: 37
+    section: Back Matter
+    input: "37-Manifesting-Journal.md"
+    template: "worksheet.xhtml.j2"
+    output: "37-Manifesting-Journal.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Manifesting Journal"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-manifest"
+        title: "Manifesting Journal"
+        prompts: []
+
+  - id: 38
+    section: Back Matter
+    input: "38-Journal-Page.md"
+    template: "worksheet.xhtml.j2"
+    output: "38-Journal-Page.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Journal Page"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-jpage"
+        title: "Journal Page"
+        prompts: []
+
+  - id: 39
+    section: Back Matter
+    input: "39-Professional-Development.md"
+    template: "worksheet.xhtml.j2"
+    output: "39-Professional-Development.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Professional Development"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-pro-dev"
+        title: "Professional Development"
+        prompts: []
+
+  - id: 40
+    section: Back Matter
+    input: "40-SMART-Goals.md"
+    template: "worksheet.xhtml.j2"
+    output: "40-SMART-Goals.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "SMART Goals"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-smart"
+        title: "SMART Goals"
+        prompts: []
+
+  - id: 41
+    section: Back Matter
+    input: "41-Self-Care-Journal.md"
+    template: "worksheet.xhtml.j2"
+    output: "41-Self-Care-Journal.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Self-Care Journal"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-self-care"
+        title: "Self-Care Journal"
+        prompts: []
+
+  - id: 42
+    section: Back Matter
+    input: "42-Vision-Journal.md"
+    template: "worksheet.xhtml.j2"
+    output: "42-Vision-Journal.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Vision Journal"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-vision"
+        title: "Vision Journal"
+        prompts: []
+
+  - id: 43
+    section: Back Matter
+    input: "43-Doodle-Page.md"
+    template: "worksheet.xhtml.j2"
+    output: "43-Doodle-Page.xhtml"
+    page_box_class: "page-box worksheet"
+    column_mode: "1 col"
+    role: "backmatter"
+    description: "Doodle Page"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      ws:
+        id: "bm-doodle"
+        title: "Doodle Page"
+        prompts: []
+
+  - id: 44
+    section: Back Matter
+    input: "44-bibliography.md"
+    template: "fm-static.xhtml.j2"
+    output: "44-bibliography.xhtml"
+    page_box_class: "page-box fm-static"
+    column_mode: "2 col"
+    role: "backmatter"
+    description: "Bibliography"
+    bible_quote: null
+    image:
+      src: null
+      alt: null
+    meta:
+      title: "Bibliography"
+
+images:
+  preface: preface-quote.png
+  conclusion: conclusion-quote.png
+  author_photo: michael.jpg
+  chapter_i: chapter-i-quote.png
+  chapter_ii: chapter-ii-quote.png
+  chapter_iii: chapter-iii-quote.png
+  chapter_iv: chapter-iv-quote.png
+  chapter_v: chapter-v-quote.png
+  chapter_vi: chapter-vi-quote.png
+  chapter_vii: chapter-vii-quote.png
+  chapter_viii: chapter-viii-quote.png
+  chapter_ix: chapter-ix-quote.png
+  chapter_x: chapter-x-quote.png
+  chapter_xi: chapter-xi-quote.png
+  chapter_xii: chapter-xii-quote.png
+  chapter_xiii: chapter-xiii-quote.png
+  chapter_xiv: chapter-xiv-quote.png
+  chapter_xv: chapter-xv-quote.png
+  chapter_xvi: chapter-xvi-quote.png
+
+build:
+  validation:
+    epub_check: true
+    css_validation: true
+    image_validation: true
+    accessibility_check: true
+  optimization:
+    compress_images: true
+    minify_css: false
+    optimize_fonts: true
+  output:
+    filename_prefix: curls-and-contemplation
+    include_timestamp: true
+    generate_reports: true
+
+distribution:
+  kindle_direct_publishing:
+    enabled: true
+    categories:
+      - Crafts, Hobbies & Home > Beauty, Grooming & Style
+      - Business & Money > Small Business & Entrepreneurship
+  apple_books:
+    enabled: true
+    categories:
+      - Lifestyle & Home
+      - Business & Personal Finance
+  ingram_spark:
+    enabled: true
+    trim_size: 6x9
+    paper_type: white
+
+quality_checks:
+  word_count_minimum: 50000
+  chapter_count: 16
+  image_count: 19
+  accessibility_compliance: WCAG 2.2 Level AA
+  file_size_target: "< 50MB"
+
+version:
+  major: 1
+  minor: 0
+  patch: 0
+  build_date: "2025-01-27"
+
+analytics:
+  track_build_metrics: true
+  track_user_engagement: true
+  track_accessibility_compliance: true
+  track_file_optimization: true

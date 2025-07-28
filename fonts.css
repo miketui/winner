@@ -1,0 +1,205 @@
+/*
+
+- fonts.css — Font Definitions for “Curls & Contemplation” EPUB
+- Optimized for EPUB 3.2 compatibility matching actual font files
+  */
+
+/* ====== PRIMARY FONTS ====== */
+
+/* Libre Baskerville - Primary body text font */
+@font-face {
+	font-family: ‘Libre Baskerville’;
+	src: url(‘fonts/librebaskerville-regular.woff2’) format(‘woff2’);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ‘Libre Baskerville’;
+	src: url(‘fonts/librebaskerville-bold.woff2’) format(‘woff2’);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ‘Libre Baskerville’;
+	src: url(‘fonts/librebaskerville-italic.woff2’) format(‘woff2’);
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Cinzel Decorative - Chapter titles only */
+@font-face {
+	font-family: ‘Cinzel Decorative’;
+	src: url(‘fonts/CinzelDecorative.woff2’) format(‘woff2’);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Montserrat - Supporting text (author, publisher info) */
+@font-face {
+	font-family: ‘Montserrat’;
+	src: url(‘fonts/Montserrat-Regular.woff2’) format(‘woff2’);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ‘Montserrat’;
+	src: url(‘fonts/Montserrat-Bold.woff2’) format(‘woff2’);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ====== SPECIFIC FONT ASSIGNMENTS ====== */
+
+/* Body text - Libre Baskerville Normal */
+body,
+p,
+.body-text,
+.content {
+	font-family: ‘Libre Baskerville’, Georgia, ‘Times New Roman’, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Chapter titles ONLY - Cinzel Decorative */
+.chapter-title-word,
+.chapter-number-text,
+h1.chapter-title,
+.part-title {
+	font-family: ‘Cinzel Decorative’, Georgia, ‘Times New Roman’, serif;
+	font-weight: 400;
+}
+
+/* Drop caps - Libre Baskerville Bold */
+.dropcap,
+.dropcap-first-letter::first-letter,
+.initial-cap {
+	font-family: ‘Libre Baskerville’, Georgia, ‘Times New Roman’, serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Bible quotes - Libre Baskerville Italic */
+.bible-quote-container,
+.bible-quote-text,
+blockquote.bible-quote {
+	font-family: ‘Libre Baskerville’, Georgia, ‘Times New Roman’, serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* All other headings - Libre Baskerville Normal (not Cinzel) */
+h1:not(.chapter-title),
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+.section-title {
+	font-family: ‘Libre Baskerville’, Georgia, ‘Times New Roman’, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Supporting text - Montserrat */
+.author,
+.publisher-info,
+.copyright,
+.metadata,
+.toc-page-number {
+	font-family: ‘Montserrat’, Arial, ‘Helvetica Neue’, sans-serif;
+}
+
+/* ====== FALLBACK FONT STACKS ====== */
+
+/* Ensure graceful degradation if fonts fail to load */
+.fallback-serif {
+	font-family: Georgia, ‘Times New Roman’, ‘Book Antiqua’, serif;
+}
+
+.fallback-sans {
+	font-family: Arial, ‘Helvetica Neue’, Helvetica, sans-serif;
+}
+
+/* ====== FONT FEATURE SETTINGS ====== */
+
+/* Enable advanced typography features when available */
+body {
+	font-feature-settings: “kern” 1, “liga” 1, “calt” 1;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Disable ligatures in chapter titles for better letter spacing */
+.chapter-title-word,
+.chapter-number-text {
+	font-feature-settings: “kern” 1, “liga” 0, “calt” 0;
+	letter-spacing: 0.02em;
+}
+
+/* ====== RESPONSIVE FONT LOADING ====== */
+
+/* Smaller screens get simplified font stack for performance */
+@media screen and (max-width: 480px) {
+	body {
+		font-family: Georgia, ‘Times New Roman’, serif;
+	}
+
+	.chapter-title-word {
+		font-family: Georgia, ‘Times New Roman’, serif;
+		font-weight: bold;
+	}
+}
+
+/* ====== PRINT FONT OPTIMIZATION ====== */
+
+@media print {
+	/* Use system fonts for better print rendering */
+	body {
+		font-family: ‘Times New Roman’, Times, serif;
+	}
+
+	.chapter-title-word,
+	.chapter-number-text {
+		font-family: ‘Times New Roman’, Times, serif;
+		font-weight: bold;
+	}
+
+	.author,
+	.publisher-info {
+		font-family: Arial, sans-serif;
+	}
+}
+
+/* ====== ACCESSIBILITY ENHANCEMENTS ====== */
+
+/* Respect user’s motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	- {
+		font-display: swap;
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	body {
+		font-weight: 500;
+	}
+
+	.chapter-title-word,
+	.dropcap {
+		font-weight: 700;
+	}
+}
+
+/* End of fonts.css */
