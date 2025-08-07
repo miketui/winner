@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{{ title_full }}</title>
+  <link rel="stylesheet" type="text/css" href="../fonts.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body class="chapter">
+  <section class="title-page">
+    <div class="roman">{{ roman_numeral }}</div>
+    <h1 class="chapter-title">
+      {% for line in title_lines %}<span>{{ line }}</span>{% endfor %}
+    </h1>
+  </section>
+
+  <section class="chapter-content">
+    {{ content_html | safe }}
+  </section>
+
+  <section class="chapter-quiz">
+    {{ quiz_html | safe }}
+  </section>
+
+  <section class="chapter-worksheet">
+    {{ worksheet_html | safe }}
+  </section>
+
+  <section class="chapter-closing">
+    <figure class="quote-image">
+      <img src="../{{ closing_image }}" alt="{{ closing_alt }}" />
+    </figure>
+  </section>
+</body>
+</html>
